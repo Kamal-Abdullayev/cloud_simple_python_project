@@ -10,13 +10,13 @@ import uuid
 app = Flask(__name__)
 
 
-STORAGE_ACCOUNT=os.getenv('STORAGE_ACCOUNT')
-CONN_KEY=os.getenv('CONN_KEY')
-COSMOS_URL=os.getenv('COSMOS_URL')
-MasterKey=os.getenv('MasterKey')
+STORAGE_ACCOUNT=os.getenv('APPSETTING_STORAGE_ACCOUNT')
+CONN_KEY=os.getenv('APPSETTING_CONN_KEY')
+COSMOS_URL=os.getenv('APPSETTING_COSMOS_URL')
+MasterKey=os.getenv('APPSETTING_MasterKey')
 
-DATABASE_ID='lab5messagesdb'
-CONTAINER_ID='lab5messages'
+DATABASE_ID='lab10messagesdb'
+CONTAINER_ID='lab10messages'
 cosmos_db_client = cosmos_client.CosmosClient(COSMOS_URL, {'masterKey': MasterKey} )
 cosmos_db = cosmos_db_client.get_database_client(DATABASE_ID)
 container = cosmos_db.get_container_client(CONTAINER_ID)
