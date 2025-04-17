@@ -1,0 +1,96 @@
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.66.137:5000
+[33mPress CTRL+C to quit[0m
+172.18.64.116 - - [12/Mar/2025 18:12:02] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 18:12:02] "GET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 18:12:02] "GET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 18:12:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "[36mGET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "[36mGET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "[36mGET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "[36mGET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "[36mGET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "[36mGET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 18:12:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.18.64.116 - - [12/Mar/2025 20:19:39] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 20:19:39] "GET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 20:19:39] "GET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 20:19:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.18.64.116 - - [12/Mar/2025 20:19:40] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 20:19:40] "[36mGET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 20:19:40] "[36mGET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 20:20:03] "POST /handle_message HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 20:20:06] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 20:20:06] "GET /static/images/bonus_1.png HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 20:20:06] "[36mGET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 20:20:06] "[36mGET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1[0m" 304 -
+Traceback (most recent call last):
+  File "/home/ubuntu/practice5/env/bin/flask", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 1107, in main
+    cli.main()
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/decorators.py", line 92, in new_func
+    return ctx.invoke(f, obj, *args, **kwargs)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 955, in run_command
+    raise e from None
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 939, in run_command
+    app: WSGIApplication = info.load_app()
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 341, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 247, in locate_app
+    __import__(module_name)
+  File "/home/ubuntu/practice5/app.py", line 16, in <module>
+    cosmos_db_client = cosmos_client.CosmosClient(COSMOS_URL, {'masterKey': MasterKey} )
+NameError: name 'MasterKey' is not defined
+172.18.64.116 - - [12/Mar/2025 21:45:22] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 21:45:22] "[36mGET /static/images/bonus_1.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 21:45:22] "[36mGET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 21:45:22] "[36mGET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 21:45:23] "GET / HTTP/1.1" 200 -
+172.18.64.116 - - [12/Mar/2025 21:45:23] "[36mGET /static/images/bonus_1.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 21:45:23] "[36mGET /static/images/Screenshot%202025-03-06%20212859.png HTTP/1.1[0m" 304 -
+172.18.64.116 - - [12/Mar/2025 21:45:23] "[36mGET /static/images/Screenshot%202025-02-13%20135952.png HTTP/1.1[0m" 304 -
+Traceback (most recent call last):
+  File "/home/ubuntu/practice5/env/bin/flask", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 1107, in main
+    cli.main()
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/decorators.py", line 92, in new_func
+    return ctx.invoke(f, obj, *args, **kwargs)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 955, in run_command
+    raise e from None
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 939, in run_command
+    app: WSGIApplication = info.load_app()
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 341, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+  File "/home/ubuntu/practice5/env/lib/python3.10/site-packages/flask/cli.py", line 247, in locate_app
+    __import__(module_name)
+  File "/home/ubuntu/practice5/app.py", line 16, in <module>
+    cosmos_db_client = cosmos_client.CosmosClient(COSMOS_URL, {'masterKey': MasterKey} )
+NameError: name 'MasterKey' is not defined
