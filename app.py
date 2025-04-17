@@ -103,8 +103,6 @@ def handleMessage():
     return render_template('handle_message.html', message=new_message)
 
 
-
-# The Flask route, defining the main behaviour of the webserver:
 @app.route("/", methods=['GET'])
 def htmlForm():
 
